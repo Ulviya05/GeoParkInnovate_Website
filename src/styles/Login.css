@@ -1,0 +1,119 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 370px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: calc(100vh - 110px);
+}
+
+.text input {
+    width: 270px;
+    height: 30px;
+    margin: 0 0 20px 0;
+    padding: 20px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid hsl(120, 40%, 80%); /* Lighter green border */
+    font-size: 15px;
+}
+
+.text input:focus {
+    border-color: hsl(120, 60%, 50%); /* Darker green on focus */
+}
+
+.login_button button {
+    margin-top: 5px;
+    padding: 15px 120px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 15px;
+    background-color: #4CAF50; /* Green background */
+    color: hsl(0, 0%, 100%); /* White text */
+    border: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.login_button button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.login_button button:hover {
+    transform: scale(1.05);
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.login_button button:hover:before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+
+.login_button button:active {
+    transform: scale(0.95);
+}
+
+.heading {
+    margin-bottom: 18px;
+    margin-top: 40px;
+}
+
+.link {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.login_link {
+    color: green; /* Link color */
+}
+
+.container {
+    background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    padding: 55px 0;
+}
+
+.username,
+.password {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.codeOption {
+    margin-right: 210px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.radioButton {
+    margin-right: 5px;
+    color: hsl(120, 40%, 80%); /* Lighter green */
+}
+
+@media (max-width: 720px) {
+    .container {
+        padding: 110px 0;
+    }
+
+    .login {
+        height: calc(100vh - 220px);
+        width: 330px;
+    }
+}

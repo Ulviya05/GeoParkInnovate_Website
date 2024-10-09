@@ -1,0 +1,9 @@
+.map-view {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-color: #e0e0e0; /* Change this to your desired background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px -8px 0px -8px !;
+}

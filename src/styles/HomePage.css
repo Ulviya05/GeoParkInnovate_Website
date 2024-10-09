@@ -1,0 +1,46 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust height based on navbar height */
+  /* Full width */
+  background-image: url("https://images.pexels.com/photos/227416/pexels-photo-227416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  text-align: center;
+  color: white; /* Change text color for better contrast */
+  margin: 8px -8px 0px -8px;
+}
+
+.heading {
+  font-size: 76px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.middle {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.explore-button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(
+    0,
+    255,
+    13,
+    0.733
+  ); /* Button color with some transparency */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.explore-button:hover {
+  background-color: rgba(87, 217, 0, 0.9); /* Darker shade on hover */
+}
